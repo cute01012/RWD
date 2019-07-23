@@ -18,9 +18,10 @@
     <form action="https://formspree.io/cute01012@gmail.com" method="POST" class="search-form">
       <fieldset>
         <legend>검색 폼</legend>
-         <label for="search">검색어</label>
+         <label for="search" class="a11y-hidden">검색어</label>
          <input type="search" id="search" placeholder="검색어를 입력하세요" required name="keyword">
-         <button class="btn-search" type="button">검색</button>
+         <button class="btn-search" type="submit">검색</button>
+         <!-- <a class="btn-search" href="#" role="button">검색</a> -->
       </fieldset>
     </form>
   </header>

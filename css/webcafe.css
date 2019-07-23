@@ -2,6 +2,30 @@
 @import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
 @import url('./normalize.css');
 @import url('./reset.css');
+/* 숨김 콘텐츠 */
+/* legend{
+  background: yellow;
+  position: absolute;
+  left:-9999em;
+} 
+*/
+legend, .a11y-hidden{
+  background:pink;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+}
+body{
+  font-family: 'Spoqa
+  Han Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  background: #fff;
+  color: #181818;
+}
 /* 링크 스타일 */
 a{
   color:inherit;
@@ -11,10 +35,111 @@ a{
 html{
   font-size:10px;
 }
- body{
-   font-family: 'Spoqa Han Sans', sans-serif;
-   font-weight: 400;
-   font-size: 1.4rem;
-   background: #fff;
-   color: #181818;
+/* 공통 스타일 */
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+ 
+ /* 모바일 레이아웃 */
+ @media screen and (min-width: 320px) and (max-width: 999px){
+   .header{
+     background: #38302e;
+     color: #fff;
+     display: flex;
+     flex-direction: row; /* X축이 메인 , Y축이 메인이면 column */
+     flex-wrap: wrap;
+     padding: 0 20px;
+   }
+ }
+   .logo, .member, .search-form{
+     width: 100%;
+     padding: 0 20px;
+   }
+ /* 모바일 로고 */
+   .logo{
+     background: yellow;
+   }
+ /* 모바일 멤버링크 */
+   .member{
+     background: #988574;
+     /* margin: 0 -20px; */
+     order: -1;
+     display: flex;
+     justify-content: flex-end; /* space-between, space-around */
+     padding-top: 2px;
+     padding-bottom: 2px;
+   }
+   .member a{
+     display: block;
+     padding: 5px 2px;
+     margin-left: 1em;
+   }
+ /* 모바일 검색 폼 */
+   .search-form{
+     background: skyblue;
+   }
+
+ /* 데스크탑 레이아웃 */
+ @media screen and (min-width:1000px){
+   .header {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+   }
+   /* 데스크탑 로고 */
+   .logo{
+     position: absolute;
+     top: 50%;
+     left: 15px;
+     margin-top:-29px;
+     /* transform: translateY(-50%); */
+   }
+   .logo img{
+     vertical-align: top;
+   }
+   /* 데스크탑 멤버링크 */
+   .member{
+     font-size: 0; 
+     text-align: right;
+     padding: 2px 0;
+     margin-right: -1.4rem;
+     /* position: relative; */
+     /* left: 1.4rem; */
+   }
+   .member li, member a {
+     display: inline-block;
+   }
+   .member li{
+     display: inline-block;
+     font-size: 1.4rem;
+   }
+   .member li:nth-child(n+2)::before{
+     content: '|';
+   }
+   .member a{
+     display: inline-block;
+     padding: 0.5em 1em;
+   }
+   /* 데스크탑 검색 폼 */
+   .search-form {
+    text-align: right;
+    }
+    input[type="search"]{
+      border: 1px solid #666;
+      border-radius: 5px;
+      width: 400px;
+      padding:5px 5px;
+      height: 28px;
+    }
+    .btn-search{
+      width: 50px;
+      padding: 5px 10px;
+      border: 1px solid #666;
+      background: #988574;
+      border-radius: 5px;
+      color: #fff;
+      height: 28px;
+      /* display: block; */
+    }
  }
