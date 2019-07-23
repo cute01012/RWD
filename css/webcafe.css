@@ -92,10 +92,15 @@ input[type="search"]{
 }
 /* 데스크탑 레이아웃 */
 @media screen and (min-width: 1000px){
+/* 데스크탑 레이아웃 */
+  .header, .menu{
+    width:1000px;
+    margin: 0 auto;
+  }
+  /* 데스크탑 헤더 */
   .header {
     position: relative;
-    width: 1000px;
-    margin: 0 auto;
+    padding-bottom: 1em;
   }
   /* 데스크탑 로고 */
   .logo{
@@ -143,5 +148,15 @@ input[type="search"]{
   }
   .btn-search::before{
     content: '검색';
+  }
+  /* 데스크탑 메인메뉴 */
+  .btn-menubar{
+    display: none;
+  }
+  .navigation{
+    background: #988574;
+  }
+  .menu{
+    background: blue;
   }
 }
