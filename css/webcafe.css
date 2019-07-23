@@ -82,14 +82,15 @@ input[type="search"]{
     width: calc(100% - 35px);
   }
   .btn-search{
-    background: transparent url('./images/btn_search.png') no-repeat;
-    background-size: 100%;
+    position: relative;
+    background: transparent;
     width: 30px;
     height: 30px;
     border: 0;
     padding: 0;
   }
   .btn-search::after{
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -101,9 +102,9 @@ input[type="search"]{
   /* 모바일 메인메뉴 */
   .btn-menubar{
     position: absolute;
-    background: transparent;
     top: 55px;
     right: 20px;
+    background: transparent;
     width: 30px;
     height: 30px;
     border: 0;
@@ -120,13 +121,12 @@ input[type="search"]{
     transition: all 0.2s;
   }
   .menubar-top{
-    top: 0;    
+    top: 0;
   }
   .menubar-middle{
     top: 50%;
     transform: translateY(-50%);
   }
-
   .menubar-bottom{
     top: 100%;
     transform: translateY(-100%);
@@ -136,15 +136,15 @@ input[type="search"]{
     transform: translateY(-50%) rotate(45deg);
   }
   .is-act .menubar-middle{
-   transform: translate(-100%, -50%);
+    transform: translate(-100%, -50%);
   }
   .is-act .menubar-bottom{
-   top: 50%;
-   transform: translateY(-50%) rotate(-45deg);
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
   }
   .menu{
-    width:70%;
-    height:100vh;
+    width: 70%;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -159,9 +159,9 @@ input[type="search"]{
 }
 /* 데스크탑 레이아웃 */
 @media screen and (min-width: 1000px){
-/* 데스크탑 레이아웃 */
+  /* 데스크탑 레이아웃 */
   .header, .menu{
-    width:1000px;
+    width: 1000px;
     margin: 0 auto;
   }
   /* 데스크탑 헤더 */
@@ -226,7 +226,7 @@ input[type="search"]{
   }
   .menu::after{
     content: "";
-    display:block;
+    display: block;
     clear: both;
   }
   .menu li{
@@ -238,7 +238,7 @@ input[type="search"]{
     color: #fff;
     margin-left: 111px;
   }
-  .menu .menu-list:first-child{
+  .menu-list:first-child{
     margin-left: 0;
   }
   .menu-item{
@@ -247,9 +247,6 @@ input[type="search"]{
     text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000;
   }
   .sub-menu{
-   margin-left: 1.5em;
-  }
-  .menu li:first-child .sub-menu{
-    margin-left: 0;
+    margin-left: 1.5em;
   }
 }
