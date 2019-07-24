@@ -129,7 +129,7 @@
           새소식 <span class="en-heading">WebCafe News</span>
         </h2>
         <figure class="news-container">
-          <video class="news-video rwd-img" poster="media/poster.jpg" controls>
+          <!-- <video class="news-video rwd-img" poster="media/poster.jpg" controls>
             <source src="media/stories.mp4" type="video/mp4" />
             <track
               src="media/stories-en.vtt"
@@ -137,7 +137,10 @@
               srclang="en"
               label="English Caption"
             />
-          </video>
+          </video> -->
+          <div class="iframe-container">
+            <iframe class="rwd-iframe" src="https://www.youtube.com/embed/0Jw7OBkkfzo" allowfullscreen></iframe>
+          </div>
           <figcaption class="a11y-hidden">구글 개발자 이야기</figcaption>
         </figure>
         <p class="news-summary">
@@ -153,73 +156,92 @@
         </time>
       </section>
       <section class="board">
-          <h2 class="board-heading main-section-heading" id="board">
-              게시판
-              <span class="en-heading">WebCafe Board</span>
-          </h2>
-          <ul class="board-list">
-              <li class="icon-star">
-                  <a href="#">HTML의 모든 것을 알려주마 샘플 활용법</a>
-                  <time datetime="2018-04-04T12:34:12">2018.04.03</time>
-              </li>
-              <li class="icon-star">
-                  <a href="#">W3C 사이트 리뉴얼 및 공지사항</a>
-                  <time datetime="2018-04-04T12:34:12">2018.04.03</time>
-              </li>
-              <li class="icon-star">
-                  <a href="#">KWCAG 2.1 소식</a>
-                  <time datetime="2018-04-04T12:34:12">2018.04.03</time>
-              </li>
-              <li class="icon-star">
-                  <a href="#">서버 점검으로 인한 사이트 이용안내 입니다.</a>
-                  <time datetime="2018-04-04T12:34:12">2018.04.03</time>
-              </li>
-              <li class="icon-star">
-                  <a href="#">여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어 봅시다.</a>
-                  <time datetime="2018-04-04T12:34:12">2018.04.03</time>
-              </li>
-          </ul>
-          <a href="#" class="board-more icon-plus" aria-labelledby="board">더보기</a>
+        <h2 class="board-heading main-section-heading" id="board">
+          게시판
+          <span class="en-heading">WebCafe Board</span>
+        </h2>
+        <ul class="board-list">
+          <li class="icon-star">
+            <a href="#">HTML의 모든 것을 알려주마 샘플 활용법</a>
+            <time datetime="2018-04-04T12:34:12">2018.04.03</time>
+          </li>
+          <li class="icon-star">
+            <a href="#">W3C 사이트 리뉴얼 및 공지사항</a>
+            <time datetime="2018-04-04T12:34:12">2018.04.03</time>
+          </li>
+          <li class="icon-star">
+            <a href="#">KWCAG 2.1 소식</a>
+            <time datetime="2018-04-04T12:34:12">2018.04.03</time>
+          </li>
+          <li class="icon-star">
+            <a href="#">서버 점검으로 인한 사이트 이용안내 입니다.</a>
+            <time datetime="2018-04-04T12:34:12">2018.04.03</time>
+          </li>
+          <li class="icon-star">
+            <a href="#"
+              >여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어 봅시다.</a
+            >
+            <time datetime="2018-04-04T12:34:12">2018.04.03</time>
+          </li>
+        </ul>
+        <a href="#" class="board-more icon-plus" aria-labelledby="board"
+          >더보기</a
+        >
       </section>
       <section class="favorite-site">
-          <h2 class="favorite-site-heading main-section-heading">
-              인기 사이트<span class="en-heading">Favorite Site</span>
-          </h2>
-          <ol class="favorite-site-list">
-              <li>
-              <a href="http://ko.learnlayout.com/" target="_blank">Learn CSS Layout</a>
-              </li>
-              <li>
-              <a href="http://flexboxfroggy.com/" target="_blank">Flexbox Froggy</a>
-              </li>
-              <li>
-              <a href="http://cssgridgarden.com/" target="_blank">CSS Grid Garden</a>
-              </li>
-              <li>
-              <a href="https://developer.mozilla.org/ko/" target="_blank">MDN Web Docs</a>
-              </li>
-          </ol>
+        <h2 class="favorite-site-heading main-section-heading">
+          인기 사이트<span class="en-heading">Favorite Site</span>
+        </h2>
+        <ol class="favorite-site-list">
+          <li>
+            <a href="http://ko.learnlayout.com/" target="_blank"
+              >Learn CSS Layout</a
+            >
+          </li>
+          <li>
+            <a href="http://flexboxfroggy.com/" target="_blank"
+              >Flexbox Froggy</a
+            >
+          </li>
+          <li>
+            <a href="http://cssgridgarden.com/" target="_blank"
+              >CSS Grid Garden</a
+            >
+          </li>
+          <li>
+            <a href="https://developer.mozilla.org/ko/" target="_blank"
+              >MDN Web Docs</a
+            >
+          </li>
+        </ol>
       </section>
       <article class="twitter">
-          <h2 class="twitter-heading main-section-heading">
-              트위터<span class="en-heading">WebCafe Twitter</span>
-          </h2>
-          <dl class="twitter-user-info">
-              <dt class="a11y-hidden">사용자 이름</dt>
-              <dd class="twitter-user-name">김데레사</dd>
-              <dt class="a11y-hidden">사용자 아이디</dt>
-              <dd class="twitter-user-id">
-                  <a href="http://twitter.com/seulbinim">@seulbinim</a>
-              </dd>
-          </dl>
-          <figure class="twitter-profile">
-              <img src="images/seulbinim.jpg" alt="" class="twitter-thumbnail responsive">
-              <figcaption class="a11y-hidden">사용자 프로필</figcaption>
-          </figure>
-          <p class="twitter-summary">
-              웹표준 핵심 가이드북 개정판 출시 기념으로 세미나를 준비했습니다. 참석을 원하시는 분들은 트위터로 문의하시기 바랍니다.
-          </p>
-          <time class="twitter-date icon-calendar" datetime="2018-04-03T16:09:28">2018.04.03</time>
+        <h2 class="twitter-heading main-section-heading">
+          트위터<span class="en-heading">WebCafe Twitter</span>
+        </h2>
+        <dl class="twitter-user-info">
+          <dt class="a11y-hidden">사용자 이름</dt>
+          <dd class="twitter-user-name">김데레사</dd>
+          <dt class="a11y-hidden">사용자 아이디</dt>
+          <dd class="twitter-user-id">
+            <a href="http://twitter.com/seulbinim">@seulbinim</a>
+          </dd>
+        </dl>
+        <figure class="twitter-profile">
+          <img
+            src="images/seulbinim.jpg"
+            alt=""
+            class="twitter-thumbnail responsive"
+          />
+          <figcaption class="a11y-hidden">사용자 프로필</figcaption>
+        </figure>
+        <p class="twitter-summary">
+          웹표준 핵심 가이드북 개정판 출시 기념으로 세미나를 준비했습니다.
+          참석을 원하시는 분들은 트위터로 문의하시기 바랍니다.
+        </p>
+        <time class="twitter-date icon-calendar" datetime="2018-04-03T16:09:28"
+          >2018.04.03</time
+        >
       </article>
     </main>
     <footer class="footer">푸터</footer>
