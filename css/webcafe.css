@@ -255,7 +255,7 @@ input[type="search"]{
   .menu-list{
     float: left;
     color: #fff;
-    margin-left: 111px;
+    margin-left: 100px;
   }
   .menu-list:first-child{
     margin-left: 0;
