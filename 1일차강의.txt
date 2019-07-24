@@ -1,0 +1,95 @@
+개발환경 설정
+웹 브라우저
+Chrome 다운로드
+Firefox 다운로드
+웹 브라우저 확장 프로그램
+Web Developer
+HeadingsMap
+OpenWAX
+ColorZilla
+WhatFont
+Viewport Resizer
+에디터 및 확장 프로그램과 Code Theme
+Visual Studio Code 다운로드
+보기 -> 확장 -> 실습에 필요한 항목 검색 후 설치
+Live Server
+Prettier-Code Formatter
+Auto Close Tag
+Auto Rename Tag
+HTML Snippets
+CSS Peek
+vscode-icons
+Atom Keymap
+Monokai-Contrast Theme
+Git과 Github
+Git 다운로드
+Git 간편 안내서
+Git 초기설정 시작하기
+누구나 쉽게 이해할 수 있는 Git입문
+Github 가입하기
+NVM
+NVM 다운로드
+NVM을 사용하여 node.js 설치
+설치할 node 버전 확인
+NVM으로 node 설치 후 nvm use 명령을 통해 node 활성화
+node-sass 설치 및 버전 확인
+npm install --global node-sass
+node-sass -v
+
+
+데스크탑 -> 모바일
+
+구조설계 (콘텐츠중심)
+1.논리적인 순서
+2.시맨틱 마크업
+3.네이밍
+
+header
+nav
+main
+footer
+
+웹카페 구조설계
+
+1.로고 WEB CAFE (이미지)
+2.텍스트링크모음 (텍스트)
+3.검색폼 (텍스트 -> 배경(모바일))
+
+http://bit.ly/AOA11Y
+
+formspree.io [이메일계정으로 서버이용]
+
+
+2일차
+
+*레이아웃 (헤더)
+
+- 마크업 구조
+body
+.header
+ul.member
+form.search-form
+fieldset
+legend
+
+- 숨김컨텐츠(클래스)
+* a11y-hidden {
+숨기기위한  css
+}
+
+데스크탑(화면크기)
+1024px
+1280px
+1440px
+
+content-box = (w/h + p+b+m)
+*중요 : border-box = w/h(p+b)+m
+
+3일차
+
+탭키로 포커스받는테그
+<a>
+<input>
+<button>
+
+NVDA앱 - 응성기능지원앱
