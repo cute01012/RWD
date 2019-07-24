@@ -154,7 +154,7 @@ input[type="search"]{
   top: 1.5em;
   right: 0;
 }
-/* 인기사이트 공통 */
+/* 공통 인기사이트 */
 .favorite-site-list {
   overflow: hidden;
 }
@@ -169,6 +169,42 @@ input[type="search"]{
   border-radius: 50%;
   padding: 0 0.5em;
   margin-right: 0.5em;
+}
+/* 공통 트위터 */
+.twitter-content{
+  position: relative;
+  padding-right: 25%;
+}
+.twitter-user-name, .twitter-user-id{
+  display: inline;
+}
+.twitter-profile{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  text-align: right;
+}
+.twitter-profile img{
+  border-radius: 50%;
+  border: 1px solid #666;
+  padding: 5px;
+}
+/* 공통 푸터 */
+.footer {
+  background-color: #988574;
+  color: #fff;
+  text-align: center;
+  padding: 2em 0;
+  margin-top: 2em;
+}
+/* 주소 및 저작권 공통 */
+.address {
+  font-style: normal;
+  margin-bottom: 1em;
+}
+.copyright {
+  font-size: 1em;
 }
 /* 모바일 레이아웃 */
 @media screen and (min-width: 320px) and (max-width: 999px){
@@ -309,7 +345,14 @@ input[type="search"]{
   .recommend-book-cover{
      width: 50%;
   }
-
+  /* 모바일 푸터 */
+  .footer{
+    text-align: left;
+    padding: 1em;
+  }
+  .address span{
+    display: block;
+  }
 }
 /* 데스크탑 스타일 */
 @media screen and (min-width: 1000px){
