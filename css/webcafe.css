@@ -453,7 +453,7 @@ input[type="search"]{
     grid-template-columns: repeat(12, 65px);
     grid-column-gap: 20px;
     grid-template-areas: "book book book book news news news news news news news news"
-                       "board board board board twitter twitter twitter twitter twitter favorite favorite favorite";
+                         "board board board board twitter twitter twitter twitter twitter favorite favorite favorite";
   }
   .recommend-book{
     grid-area: book;
